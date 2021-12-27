@@ -35,6 +35,15 @@
       "relation": "manyToMany",
       "target": "api::label.label",
       "inversedBy": "movies"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

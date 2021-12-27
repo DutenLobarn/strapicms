@@ -91,7 +91,7 @@ lib-cov
 lcov.info
 pids
 logs
-results
+filterResultFromCategoriess
 node_modules
 .node_history
 
