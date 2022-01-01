@@ -1,0 +1,17 @@
+// Variables and Mixins
+@import "./config";
+
+// Import files
+@import "./_booksAndMovies";
+@import "./navbar";
+@import "./categories";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  background-color: $primaryColor;
+}
+
+// Choosing to work with Sass/scss because its fun and good repetition.

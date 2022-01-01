@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import ValueToDisplay from "./ValueToDisplay";
 
+// My navigation component
+
 export default function Navbar() {
   const [valueToDisplay, setValueToDisplay] = useState("");
   return (
-    <div>
+    <nav>
       <h1>Örnsköldsviks Bibiliotek</h1>
-      <div>
+      <div className="navBox">
         <button
           onClick={(e) => {
             setValueToDisplay(e.target.innerText);
@@ -28,18 +30,19 @@ export default function Navbar() {
         >
           Böcker och Filmer
         </button>
+
+        <button
+          onClick={(e) => {
+            setValueToDisplay(e.target.innerText);
+          }}
+        >
+          Genrer
+        </button>
       </div>
-      <button
-        onClick={(e) => {
-          setValueToDisplay(e.target.innerText);
-        }}
-      >
-        Genrer
-      </button>
       <ValueToDisplay
         valueToDisplay={valueToDisplay}
         setValueToDisplay={setValueToDisplay}
       />
-    </div>
+    </nav>
   );
 }

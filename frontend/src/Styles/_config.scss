@@ -1,0 +1,22 @@
+// Variables---------------------
+
+// Colors
+$primaryColor: #ab5af7;
+$secondaryColor: #c046e0;
+$thirdColor: #6b46e0;
+
+// Mixins------------------------
+
+@mixin button($width) {
+  font-size: 2rem;
+  background-color: #6b46e0;
+  padding: 0.5rem;
+  width: $width;
+  border-radius: 1rem;
+  margin: 0px 0.5rem;
+  margin-bottom: 2rem;
+  &:hover {
+    cursor: pointer;
+    background-color: #c046e066;
+  }
+}

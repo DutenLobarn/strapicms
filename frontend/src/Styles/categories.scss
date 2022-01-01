@@ -1,0 +1,7 @@
+.categoriesWrapper {
+  padding: 1rem 10rem 2rem 10rem;
+
+  button {
+    @include button(15rem);
+  }
+}

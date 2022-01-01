@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  // Above the nav, the pages main title
+  h1 {
+    font-size: 4rem;
+    align-self: center;
+    border-bottom: dashed 10px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .navBox {
+    border-bottom: dashed black;
+    margin-bottom: 2rem;
+  }
+  button {
+    @include button(21rem);
+  }
+}
+
+// <h2>´s under the nav, i put i here so i do not have to use so many files.
+h2 {
+  font-size: 3.5rem;
+  text-decoration: underline dashed;
+  margin-bottom: 2rem;
+  width: 100%;
+}

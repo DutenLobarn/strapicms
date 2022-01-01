@@ -1,0 +1,94 @@
+section {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+section div {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: dashed;
+  margin: 0rem 0.5rem 2rem 0.5rem;
+  padding: 0.2rem;
+}
+section p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: start;
+  width: 97.6%;
+}
+section img {
+  height: 50vh;
+  width: 50vh;
+}
+section li:hover {
+  cursor: pointer;
+  background-color: #c046e0;
+  border-radius: 40%;
+  width: 9rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+nav h1 {
+  font-size: 4rem;
+  align-self: center;
+  border-bottom: dashed 10px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+nav .navBox {
+  border-bottom: dashed black;
+  margin-bottom: 2rem;
+}
+nav button {
+  font-size: 2rem;
+  background-color: #6b46e0;
+  padding: 0.5rem;
+  width: 21rem;
+  border-radius: 1rem;
+  margin: 0px 0.5rem;
+  margin-bottom: 2rem;
+}
+nav button:hover {
+  cursor: pointer;
+  background-color: #c046e066;
+}
+
+h2 {
+  font-size: 3.5rem;
+  text-decoration: underline dashed;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.categoriesWrapper {
+  padding: 1rem 10rem 2rem 10rem;
+}
+.categoriesWrapper button {
+  font-size: 2rem;
+  background-color: #6b46e0;
+  padding: 0.5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  margin: 0px 0.5rem;
+  margin-bottom: 2rem;
+}
+.categoriesWrapper button:hover {
+  cursor: pointer;
+  background-color: #c046e066;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  background-color: #ab5af7;
+}
+
+/*# sourceMappingURL=style.css.map */

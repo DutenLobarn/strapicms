@@ -5,6 +5,9 @@ import Movies from "./Movies";
 import Categories from "./Categories";
 import ChosenCategory from "./ChosenCategory";
 
+// This component is fetching all data and also the one displaying what data the user wants to look at from the navigation component.
+// This component is also sending data to its children.
+
 export default function ValueToDisplay({ valueToDisplay, setValueToDisplay }) {
   const [categories, setCategories] = useState("");
   const [books, setBooks] = useState();
@@ -33,11 +36,13 @@ export default function ValueToDisplay({ valueToDisplay, setValueToDisplay }) {
     <div>
       {valueToDisplay === "Böcker och Filmer" ? (
         <>
+          <h2>Böcker</h2>
           <Books
             books={books}
             setValueToDisplay={setValueToDisplay}
             setChosenLabel={setChosenLabel}
           />
+          <h2>Filmer</h2>
           <Movies
             movies={movies}
             setValueToDisplay={setValueToDisplay}
@@ -45,17 +50,23 @@ export default function ValueToDisplay({ valueToDisplay, setValueToDisplay }) {
           />
         </>
       ) : valueToDisplay === "Böcker" ? (
-        <Books
-          books={books}
-          setValueToDisplay={setValueToDisplay}
-          setChosenLabel={setChosenLabel}
-        />
+        <>
+          <h2>Böcker</h2>
+          <Books
+            books={books}
+            setValueToDisplay={setValueToDisplay}
+            setChosenLabel={setChosenLabel}
+          />
+        </>
       ) : valueToDisplay === "Filmer" ? (
-        <Movies
-          movies={movies}
-          setValueToDisplay={setValueToDisplay}
-          setChosenLabel={setChosenLabel}
-        />
+        <>
+          <h2>Filmer</h2>
+          <Movies
+            movies={movies}
+            setValueToDisplay={setValueToDisplay}
+            setChosenLabel={setChosenLabel}
+          />
+        </>
       ) : valueToDisplay === "ChosenCategory" ? (
         <ChosenCategory
           categories={categories}
